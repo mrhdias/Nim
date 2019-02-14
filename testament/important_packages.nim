@@ -21,7 +21,7 @@ pkg "yaml", "nim c test/tests.nim" # ../yaml/serialization.nim(146, 33) Error: c
 
 
 # pkg "alea", "", "", true
-# pkg "arraymancer", "nim c src/arraymancer.nim"
+pkg "arraymancer", "nim c src/arraymancer.nim", "", true
 pkg "ast_pattern_matching", "nim c tests/test1.nim"
 pkg "c2nim"
 pkg "cligen", "nim c -o:cligenn cligen.nim"
@@ -39,7 +39,7 @@ pkg "iterutils"
 pkg "karax", "nim c tests/tester.nim"
 pkg "loopfusion"
 pkg "nake", "nim c nakefile.nim"
-# pkg "neo"
+pkg "neo", "nim c -d:blas=openblas tests/all.nim", "", true
 pkg "nigui", "nim c -o:niguii src/nigui.nim"
 pkg "NimData", "nim c -o:nimdataa src/nimdata.nim", "", true
 pkg "nimes", "nim c src/nimes.nim", "", true
